@@ -1,0 +1,36 @@
+body {
+    margin: 40px;
+    
+  }
+  
+  .wrapper {
+    display: inline-grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-gap: 10px;
+    background-color: rgb(53, 16, 50);
+    color: #444;
+    border:5px solid black;
+    gap: 1px;
+    
+    
+  }
+ 
+  .box{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    
+  }
+
+  .display{
+    display: flex;
+    grid-column: span 4;
+    margin: 1cm;
+    margin-right: 3px;
+    font-size: 150%;
+    justify-content: end;
+    color: white;
+   
+  }
