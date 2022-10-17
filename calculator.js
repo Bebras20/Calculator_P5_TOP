@@ -1,5 +1,6 @@
 let display = document.querySelector(".display");
 let btns= document.querySelectorAll('.box');
+let clear= document.querySelectorAll('.clear');
 var operator=null;
 var f_operand=null;
 var res=null;
@@ -68,19 +69,27 @@ for (i of btns){
 }
 
 function operation(event){
+    if (event.target.innerHTML=='C'){
+        display.innerHTML="";
+    }
+    else{
+        display.innerHTML+=event.target.innerHTML;
+        if (["+","-","/","*","="].includes(event.target.innerHTML)){
+            Operations.push(event.target.innerHTML);
+            
     
-    display.innerHTML+=event.target.innerHTML;
-    if (["+","-","/","*","="].includes(event.target.innerHTML)){
-        Operations.push(event.target.innerHTML);
+        }
+        if (Operations.length>=2){
+          
+            if (Operations[Operations.length-1]==='='){
+                display.innerHTML=Operations[Operations.length-1] +Parser(display.innerHTML);
+            }
+            else{
+                display.innerHTML=Parser(display.innerHTML)+Operations[Operations.length-1];
+            }
+        }
         
-
-    }
-    if (Operations.length>=2){
-      
         
-        display.innerHTML=Parser(display.innerHTML)+Operations[Operations.length-1];
-
-    }
-    
     
     }
+        }

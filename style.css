@@ -1,36 +1,54 @@
 body {
+    display: flex;
     margin: 40px;
+    justify-content: center;
+    align-items: center;
     
   }
   
   .wrapper {
     display: inline-grid;
     grid-template-columns: 50px 50px 50px 50px;
-    grid-gap: 10px;
-    background-color: rgb(53, 16, 50);
+    gap: 5px;
+    background-color: rgb(142, 140, 142);
     color: #444;
-    border:5px solid black;
-    gap: 1px;
+    border:15px solid rgb(108, 107, 107);
+    gap: 3px;
     
     
   }
  
   .box{
-    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(129, 47, 47);
     color: #fff;
-    border-radius: 5px;
+    margin: 5px;
+    border-radius: 3px;
     padding: 20px;
     font-size: 150%;
     
   }
 
-  .display{
+  .display {
     display: flex;
     grid-column: span 4;
-    margin: 1cm;
-    margin-right: 3px;
+    height: 30px;
+   
+
     font-size: 150%;
     justify-content: end;
     color: white;
-   
+    border: 2px solid rgb(73, 73, 66);
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    margin-bottom: 4.3px;
+margin-left: 4.3px;
+margin-right: 3px;
+margin-top: 4.3px;
+padding-bottom: 41.8px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px
   }
